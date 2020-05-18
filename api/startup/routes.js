@@ -9,6 +9,6 @@ module.exports = function (app) {
     app.use(express.json())
     app.use(express.urlencoded({ extended: true }));
     app.use("/api/v1/devicetype", routes.deviceTypeRouter);
-    // app.use("/api/v1/device", routes.deviceRouter);
+    app.use("/api/v1/device", routes.deviceRouter);
     app.use("*", routes.homeRouter);
 }

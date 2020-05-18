@@ -42,13 +42,6 @@ router.route("/:type").get((req, res) => {
 
 // delete by device type
 router.route("/:type").delete((req, res) => {
-    // try {
-    //     const id = mongoose.Types.ObjectId(req.params.id);
-    // }
-    // catch (err) {
-    //     return res.status(404).json({ code: 404, message: "device type ID is not found!!" })
-    // }
-
     DeviceType.findByIdAndDelete(req.params.type)
         .then((deviceType) => {
             if (!deviceType) { return res.status(404).json({ code: 404, message: "device type is not found!!" }) }
