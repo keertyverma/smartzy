@@ -92,4 +92,19 @@ router.route("/:id").put((req, res) => {
         .catch(err => res.status(400).json({ code: 400, message: err }));
 });
 
+// Perfom Operatin on devices
+router.route('/:id/action').post((req, res) => {
+    try {
+        const id = mongoose.Types.ObjectId(req.params.id);
+    }
+    catch (err) {
+        return res.status(404).json({ code: 404, message: "device ID is not found!!" })
+    }
+
+    const action = req.body.action.toUpperCase();
+    const message = `Performed "${action}" action on device with ID ${req.params.id}`
+    res.status(200).json({ code: 200, details: { message: message.replace(/"/g, '\'') } })
+
+});
+
 module.exports = router;
