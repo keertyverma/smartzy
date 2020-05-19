@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
+import HomePage from "./components/home.component";
 import Navbar from "./components/navbar.component";
 import AddDeviceType from "./components/add-device-type.component";
 import PairDevice from "./components/pair-device.component";
@@ -16,7 +18,7 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        <br />
+        <Route path="/" exact component={HomePage} />
         <Route path="/device-type" component={AddDeviceType} />
         <Route path="/pair-device" component={PairDevice} />
         <Route path="/smart-devices" component={AllPairedDevice} />

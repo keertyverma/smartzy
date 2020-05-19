@@ -73,7 +73,9 @@ export default class PairDevice extends Component {
     render() {
         return (
             <div>
+                <br /><br />
                 <h3>Pair new Smart Device</h3>
+                <br /><br />
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Name: </label>
