@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/keertyverma/smartzy#readme",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jquery": "^3.5.1",
     "mongoose": "^5.9.14",
     "morgan": "^1.10.0",
+    "popper.js": "^1.16.1",
     "winston": "^3.2.1"
   }
 }
