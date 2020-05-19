@@ -20,7 +20,7 @@ Smart Home Automation system to remotely control devices at home
 3. To talk to devices we mimic it and just log the action it performed.
 
 ## API workflow and test using Postman
-https://www.getpostman.com/collections/980e17da03859af6565a
+https://documenter.getpostman.com/view/5352730/Szt5frGY?version=latest
 
 ## Running locally
 
