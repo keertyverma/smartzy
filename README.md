@@ -1,4 +1,5 @@
 # Smartzy
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ec7eae11accc54bfd29d)
 
 Smart Home Automation system to remotely control devices at home
 
@@ -10,13 +11,16 @@ Smart Home Automation system to remotely control devices at home
 
 ## Current Scenarios
 
-1. Exposed a set of RESTful APIs to control the smart devices remotely.
+1. Exposed a set of RESTful APIs to control the smart devices remotely, [documented with postman](https://documenter.getpostman.com/view/5352730/Szt5fr7f?version=latest#c4d47328-036b-4668-ab82-8c1e6c237822)
    1. List all smart devices
    2. Add new smart device
    3. Perform an operation on a device
    4. Remove an installed device
 2. Built a web console through which one can control and manage the entire system.
 3. To talk to devices we mimic it and just log the action it performed.
+
+## API documentation published using Postman
+https://documenter.getpostman.com/view/5352730/Szt5fr7f?version=latest#c4d47328-036b-4668-ab82-8c1e6c237822
 
 ## Running locally
 
