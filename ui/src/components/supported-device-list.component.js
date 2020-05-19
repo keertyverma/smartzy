@@ -55,7 +55,9 @@ export default class SupportedDevice extends Component {
     render() {
         return (
             <div>
+                <br /><br />
                 <h3>List of Supported Device Types</h3>
+                <br /><br />
                 <Link to="/device-type" className="btn btn-info mb-4">Add new device type</Link>
                 <table className="table">
                     <thead className="thead-light">

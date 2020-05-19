@@ -65,8 +65,10 @@ export default class AllPairedDevice extends Component {
     render() {
         return (
             <div>
+                <br /><br />
                 <h3>List of Paired Smart Devices</h3>
-                <Link to="/pair-device" className="btn btn-info mb-4">Pair Smart Devices</Link>
+                <br /><br />
+                <Link to="/pair-device" className="btn btn-info mb-4">Pair Smart Device</Link>
                 <table className="table">
                     <thead className="thead-light">
                         <tr>
@@ -81,7 +83,7 @@ export default class AllPairedDevice extends Component {
                         {this.pairedDeviceList()}
                     </tbody>
                 </table>
-            </div>
+            </div >
         )
     }
 
