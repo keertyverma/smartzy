@@ -19,9 +19,6 @@ Smart Home Automation system to remotely control devices at home
 2. Built a web console through which one can control and manage the entire system.
 3. To talk to devices we mimic it and just log the action it performed.
 
-## API documentation published using Postman
-https://documenter.getpostman.com/view/5352730/Szt5fr7f?version=latest#c4d47328-036b-4668-ab82-8c1e6c237822
-
 ## Running locally
 
 1. Ensure that you have installed all the dependencies by running the following commands in the root of folder:
