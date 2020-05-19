@@ -38,7 +38,9 @@ export default class EditPairDevice extends Component {
     render() {
         return (
             <div>
+                <br /><br />
                 <h3>Edit Paired Smart Device</h3>
+                <br /><br />
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Name: </label>
@@ -50,7 +52,7 @@ export default class EditPairDevice extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="update" className="btn btn-primary" />
+                        <input type="submit" value="Update" className="btn btn-primary" />
                     </div>
                 </form>
             </div>

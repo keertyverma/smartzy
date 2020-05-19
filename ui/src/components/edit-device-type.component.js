@@ -38,7 +38,9 @@ export default class EditDeviceType extends Component {
     render() {
         return (
             <div>
+                <br /><br />
                 <h3>Update device type</h3>
+                <br /><br />
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Actions </label>

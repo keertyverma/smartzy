@@ -55,7 +55,7 @@ Smart Home Automation system to remotely control devices at home
 5. Start the UI development server by running following command
 
    ```bash
-   cd ui && npm start-client
+   cd ui && npm run start-client
    ```
 
    This will start the React development server and open your browser at `http://localhost:3000`. The UI will connect to backend server via URL `http://locahost:5000`.
