@@ -5,9 +5,11 @@ import axios from 'axios';
 const Device = props => (
     <tr>
         <td>{props.device._id}</td>
-        <td>{props.device.action}</td>
         <td>
-            <Link to={"/update-device/" + props.device._id}>update</Link> | <a href="/supported-devices" onClick={() => { props.deleteDevice(props.device._id) }}>delete</a>
+            {props.device.action.join(' / ')}
+        </td>
+        <td>
+            <Link className="btn btn-warning" to={"/update-device/" + props.device._id}>Update</Link> <a className="btn btn-danger" href="/supported-devices" onClick={() => { props.deleteDevice(props.device._id) }}>Delete</a>
         </td>
     </tr>
 )
@@ -45,7 +47,6 @@ export default class SupportedDevice extends Component {
 
     supportedDeviceList() {
         return this.state.supportedDevices.map(device => {
-            console.log(device)
             return <Device device={device} deleteDevice={this.deleteDevice} key={device._id} />;
         })
     }
@@ -54,7 +55,8 @@ export default class SupportedDevice extends Component {
     render() {
         return (
             <div>
-                <h3>List of Supported Smart Devices</h3>
+                <h3>List of Supported Device Types</h3>
+                <Link to="/device-type" className="btn btn-info mb-4">Add new device type</Link>
                 <table className="table">
                     <thead className="thead-light">
                         <tr>

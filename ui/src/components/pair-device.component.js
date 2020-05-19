@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { withRouter } from 'react-router-dom';
 
 export default class PairDevice extends Component {
     constructor(props) {
@@ -68,6 +67,7 @@ export default class PairDevice extends Component {
                 this.props.history.push('/smart-devices')
 
             })
+            .catch((err) => alert(err.response.data.message));
     }
 
     render() {

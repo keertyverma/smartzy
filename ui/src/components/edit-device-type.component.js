@@ -42,7 +42,7 @@ export default class EditDeviceType extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Actions </label>
-                        <input type="text"
+                        <input type="text" placeholder='Add actions separated by comma action1,action2'
                             required
                             className="form-control"
                             value={this.state.actions}

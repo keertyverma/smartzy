@@ -32,6 +32,7 @@ export default class EditPairDevice extends Component {
                 this.props.history.push('/smart-devices')
 
             })
+            .catch((err) => alert(err.response.data.message));
     }
 
     render() {

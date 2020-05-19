@@ -31,22 +31,17 @@ export default class AddDeviceType extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-
         // add new device types
         const deviceInfo = {
             type: this.state.deviceType,
             action: this.state.actions.split(",")
         }
-        console.log("process.env.REACT_APP_BASE_URL", process.env.REACT_APP_BASE_URL)
-        console.log(deviceInfo);
 
         axios.post('http://localhost:5000/api/v1/devicetype', deviceInfo)
-            .then(res => console.log(res.data));
-
-        this.setState({
-            deviceType: '',
-            actions: ''
-        })
+            .then(res => {
+                this.props.history.push('/supported-devices')
+            })
+            .catch((err) => alert(err.response.data.message));
     }
 
     render() {
@@ -65,7 +60,7 @@ export default class AddDeviceType extends Component {
                     </div>
                     <div className="form-group">
                         <label>Actions </label>
-                        <input type="text"
+                        <input type="text" placeholder="Add actions separated by comma action1,action2"
                             required
                             className="form-control"
                             value={this.state.actions}

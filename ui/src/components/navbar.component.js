@@ -14,13 +14,7 @@ export default class Navbar extends Component {
                             <Link to="/smart-devices" className="nav-link">Smart Devices</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="/pair-device" className="nav-link">Pair Smart Devices</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/supported-devices" className="nav-link">Supported Device</Link>
-                        </li>
-                        <li className="navbar-item">
-                            <Link to="/device-type" className="nav-link">Add new device</Link>
+                            <Link to="/supported-devices" className="nav-link">Supported Device Types</Link>
                         </li>
                     </ul>
                 </div>
